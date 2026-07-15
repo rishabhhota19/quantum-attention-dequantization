@@ -1,0 +1,12 @@
+cff-version: v1.0
+message: "If you use this code or data, please cite it as below."
+title: "Quantum-Inspired Feature Maps Dequantize in Vision Transformer Attention: A Matched-Budget Study — code and data"
+authors:
+  - family-names: Hota
+    given-names: Rishabh
+    affiliation: "Simplilearn Americas, Inc., Plano, TX, USA"
+    orcid: "https://orcid.org/0000-0001-6191-0903"
+license: MIT
+repository-code: "https://github.com/rishabhhota19/matched-budget-quantum-attention"
+version: v1.0
+date-released: 2026-07-15

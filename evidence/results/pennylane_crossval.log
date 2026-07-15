@@ -1,0 +1,6 @@
+angle/product kernel  max|PennyLane - ours| = 1.78e-15
+IQP kernel (c=0.0)     max|PennyLane - ours| = 2.00e-15
+IQP kernel (c=0.5)     max|PennyLane - ours| = 2.44e-15
+IQP kernel (c=1.0)     max|PennyLane - ours| = 2.66e-15
+VERDICT: MATCH
+saved -> results/pennylane_crossval.json

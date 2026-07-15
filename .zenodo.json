@@ -1,0 +1,21 @@
+{
+  "title": "Quantum-Inspired Feature Maps Dequantize in Vision Transformer Attention: A Matched-Budget Study — code and data",
+  "description": "<p>Code, experiment scripts, and logged results for the matched-budget dequantization study of quantum-inspired feature maps (an angle/product map with encoding-depth knob L and an entangling IQP map with coupling knob c) deployed as linear-attention operators in a standard Vision Transformer. At matched parameters, FLOPs, and tuning budget, neither quantum lever beats tuned classical random features on CIFAR-100 or PathMNIST; the apparent depth advantage is a bandwidth-tuning artifact (Bochner's theorem), and entanglement yields no separation while measurably concentrating the kernel. No claim of physical quantum advantage is made: the method is classical and quantum kernels are its derivation.</p>",
+  "creators": [
+    {
+      "name": "Hota, Rishabh",
+      "affiliation": "Simplilearn Americas, Inc., Plano, TX, USA",
+      "orcid": "0000-0001-6191-0903"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "quantum machine learning",
+    "quantum kernels",
+    "linear attention",
+    "vision transformer",
+    "dequantization",
+    "matched-budget evaluation"
+  ]
+}

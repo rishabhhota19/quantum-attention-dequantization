@@ -1,0 +1,126 @@
+{
+  "tag": "collapse_on_activations",
+  "diagnostic": "E5_collapse_on_activations",
+  "description": "eff-rank of real phi(q)phi(q)^T per quantum depth L, tuned vs fixed bandwidth; confirmation panel for the collapse figure (real-activation analogue of scripts/collapse_diag.py).",
+  "variant": "quantum",
+  "qk_norm": true,
+  "batch_size": 128,
+  "max_tokens": 512,
+  "precision": "bf16",
+  "ckpt_dir": "results/e5",
+  "single_ckpt": null,
+  "trained_depths": 6,
+  "activations": "trained",
+  "params": 1806345,
+  "fixed_bw": 1.0,
+  "tuned_bandwidths": {
+    "1": 2.0,
+    "2": 1.5,
+    "3": 1.0,
+    "4": 1.0,
+    "6": 0.75,
+    "8": 0.75
+  },
+  "tuned": [
+    {
+      "L": 1,
+      "bw": 2.0,
+      "eff_rank_q": 20.571349628190507,
+      "eff_rank_k": 21.902377240680806,
+      "n_tokens": 512
+    },
+    {
+      "L": 2,
+      "bw": 1.5,
+      "eff_rank_q": 20.98175714728192,
+      "eff_rank_k": 22.060027492220108,
+      "n_tokens": 512
+    },
+    {
+      "L": 3,
+      "bw": 1.0,
+      "eff_rank_q": 19.545061370570775,
+      "eff_rank_k": 19.317305616930277,
+      "n_tokens": 512
+    },
+    {
+      "L": 4,
+      "bw": 1.0,
+      "eff_rank_q": 20.797277576044415,
+      "eff_rank_k": 21.000290207910314,
+      "n_tokens": 512
+    },
+    {
+      "L": 6,
+      "bw": 0.75,
+      "eff_rank_q": 20.37533422525316,
+      "eff_rank_k": 20.466170868473643,
+      "n_tokens": 512
+    },
+    {
+      "L": 8,
+      "bw": 0.75,
+      "eff_rank_q": 20.599228999151144,
+      "eff_rank_k": 22.120606788073438,
+      "n_tokens": 512
+    }
+  ],
+  "fixed": [
+    {
+      "L": 1,
+      "bw": 1.0,
+      "eff_rank_q": 9.795588901766251,
+      "eff_rank_k": 10.257006508635937,
+      "n_tokens": 512
+    },
+    {
+      "L": 2,
+      "bw": 1.0,
+      "eff_rank_q": 15.051196449585616,
+      "eff_rank_k": 15.681711775087475,
+      "n_tokens": 512
+    },
+    {
+      "L": 3,
+      "bw": 1.0,
+      "eff_rank_q": 19.545061370570775,
+      "eff_rank_k": 19.317305616930277,
+      "n_tokens": 512
+    },
+    {
+      "L": 4,
+      "bw": 1.0,
+      "eff_rank_q": 20.797277576044415,
+      "eff_rank_k": 21.000290207910314,
+      "n_tokens": 512
+    },
+    {
+      "L": 6,
+      "bw": 1.0,
+      "eff_rank_q": 23.51369917384563,
+      "eff_rank_k": 23.81221694125465,
+      "n_tokens": 512
+    },
+    {
+      "L": 8,
+      "bw": 1.0,
+      "eff_rank_q": 23.120164828596426,
+      "eff_rank_k": 24.757075200757725,
+      "n_tokens": 512
+    }
+  ],
+  "tuned_spread": 1.4366957767111472,
+  "fixed_spread": 13.718110272079379,
+  "spread_ratio": 9.548375163656832,
+  "collapse_margin": 1.5,
+  "verdict": "CONFIRMED",
+  "collapse_confirmed": true,
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A40",
+    "host": "172f4c33c42d",
+    "python": "3.12.3",
+    "finished_utc": "2026-07-01T12:23:28.489870+00:00"
+  }
+}

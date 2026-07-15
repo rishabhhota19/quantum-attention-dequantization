@@ -1,0 +1,50 @@
+{
+  "device": "NVIDIA GeForce RTX 3050 4GB Laptop GPU",
+  "config": {
+    "batch": 4,
+    "heads": 3,
+    "dim_head": 64,
+    "features": 256,
+    "iters": 10,
+    "ns": [
+      256,
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "out": "results/efficiency_crossover.json"
+  },
+  "rows": {
+    "256": {
+      "softmax_ms": 1.65,
+      "softmax_mb": 35.2,
+      "linear_ms": 3.82,
+      "linear_mb": 44.6
+    },
+    "512": {
+      "softmax_ms": 3.57,
+      "softmax_mb": 78.2,
+      "linear_ms": 5.09,
+      "linear_mb": 71.9
+    },
+    "1024": {
+      "softmax_ms": 12.37,
+      "softmax_mb": 238.1,
+      "linear_ms": 9.44,
+      "linear_mb": 124.8
+    },
+    "2048": {
+      "softmax_ms": 52.15,
+      "softmax_mb": 860.9,
+      "linear_ms": 18.85,
+      "linear_mb": 231.8
+    },
+    "4096": {
+      "softmax_ms": 212.35,
+      "softmax_mb": 3314.6,
+      "linear_ms": 36.79,
+      "linear_mb": 445.7
+    }
+  }
+}

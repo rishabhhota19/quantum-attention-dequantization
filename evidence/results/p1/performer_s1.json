@@ -1,0 +1,107 @@
+{
+  "tag": "performer_s1",
+  "variant": "performer",
+  "seed": 1,
+  "layers": 1,
+  "coupling": 1.0,
+  "precision": "bf16",
+  "params": 1823908,
+  "best_val_acc": 35.1,
+  "final_val_acc": 35.1,
+  "peak_mem_mb": 2399.09376,
+  "wall_sec": 467.81565260887146,
+  "mean_epoch_sec": 46.779238319396974,
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A40",
+    "host": "a756741d0a00",
+    "python": "3.12.3",
+    "finished_utc": "2026-06-20T21:49:18.219841Z",
+    "bf16_supported": true
+  },
+  "config": {
+    "variant": "performer",
+    "seed": 1,
+    "epochs": 10,
+    "precision": "bf16",
+    "num_features": 256,
+    "layers": 1,
+    "coupling": 1.0,
+    "bandwidth": -1.0,
+    "image_size": 32,
+    "patch_size": 4,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup": 5,
+    "label_smoothing": 0.1,
+    "workers": 4,
+    "data_dir": "./data",
+    "out_dir": "./results/p1",
+    "tag": "performer_s1"
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 4.153032777248285,
+      "val_acc": 12.92,
+      "epoch_sec": 47.97422814369202
+    },
+    {
+      "epoch": 1,
+      "train_loss": 3.932726082435021,
+      "val_acc": 10.52,
+      "epoch_sec": 47.31709122657776
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.882391659418742,
+      "val_acc": 16.0,
+      "epoch_sec": 47.38914155960083
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.719963844005878,
+      "val_acc": 17.73,
+      "epoch_sec": 41.97179579734802
+    },
+    {
+      "epoch": 4,
+      "train_loss": 3.594640453045185,
+      "val_acc": 21.04,
+      "epoch_sec": 47.16416096687317
+    },
+    {
+      "epoch": 5,
+      "train_loss": 3.4378490020067263,
+      "val_acc": 24.64,
+      "epoch_sec": 47.269320487976074
+    },
+    {
+      "epoch": 6,
+      "train_loss": 3.2952504647083773,
+      "val_acc": 25.75,
+      "epoch_sec": 47.2934889793396
+    },
+    {
+      "epoch": 7,
+      "train_loss": 3.160268491353744,
+      "val_acc": 29.29,
+      "epoch_sec": 47.38620066642761
+    },
+    {
+      "epoch": 8,
+      "train_loss": 3.018391446578197,
+      "val_acc": 32.65,
+      "epoch_sec": 47.28868746757507
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.893631903330485,
+      "val_acc": 35.1,
+      "epoch_sec": 46.73826789855957
+    }
+  ],
+  "done": true
+}
