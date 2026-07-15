@@ -36,7 +36,8 @@ See each folder's `README.md` for details.
 
 ## Citation
 > Rishabh Hota. *Quantum-Inspired Feature Maps Dequantize in Vision Transformer Attention: A
-> Matched-Budget Study.* 2026.
+> Matched-Budget Study.* 2026. Code and data archived at
+> [doi:10.5281/zenodo.21380802](https://doi.org/10.5281/zenodo.21380802).
 
 ## License
 MIT — see [LICENSE](LICENSE).

@@ -7,6 +7,7 @@ authors:
     affiliation: "Simplilearn Americas, Inc., Plano, TX, USA"
     orcid: "https://orcid.org/0000-0001-6191-0903"
 license: MIT
+doi: 10.5281/zenodo.21380802
 repository-code: "https://github.com/rishabhhota19/matched-budget-quantum-attention"
 version: v1.0
 date-released: 2026-07-15
